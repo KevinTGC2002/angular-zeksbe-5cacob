@@ -1,30 +1,11 @@
-<h2>Products</h2>
+<h3>Graphic Design Portfolio</h3>
 
-<div *ngFor="let product of products; index as productId">
 
-  <h3>
-    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
-      {{ product.name }}
-    </a>
-  </h3>
 
-  <p *ngIf="product.description">
-    Description: {{ product.description }}
-  </p>
-
-  <button (click)="share()">
-    Share
-  </button>
-
-  <app-product-alerts
-  [product]="product" 
-  (notify)="onNotify()">
-</app-product-alerts>
-
+<div class="Back">
+	<img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80" alt="Italian Trulli">
 </div>
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
--->
+	<app-portfolio-lightbox portfolioURL='/assets/graphic.json'></app-portfolio-lightbox>
+	<div class="Bottom-foot">
+		<h1>Hello</h1>c
+	</div>
